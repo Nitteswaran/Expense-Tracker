@@ -1,0 +1,130 @@
+
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .app {
+      background: #fff;
+      width: 100%;
+      max-width: 420px;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+      font-weight: 900;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      margin-left: 15px;
+    }
+
+    .balance {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .balance h2 {
+      font-size: 1.3rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .balance p {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-bottom: 2rem;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 0.8rem;
+      font-size: 1rem;
+    }
+
+    input:focus {
+      border-color: #4facfe;
+      box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+    }
+
+    button {
+      background: #000000;
+      border: none;
+      color: #fff;
+      padding: 0.9rem;
+      font-size: 1rem;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff0808;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f7f9fc;
+      padding: 0.8rem 1rem;
+      border-radius: 0.8rem;
+      font-size: 1rem;
+    }
+
+    li span {
+      font-weight: bold;
+    }
+
+    .remove {
+      color: #e74c3c;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+
